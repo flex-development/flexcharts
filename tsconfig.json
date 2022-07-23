@@ -1,0 +1,100 @@
+{
+  // SEE: https://github.com/tsconfig/bases/blob/main/bases/node16-strictest-esm.combined.json
+  "compilerOptions": {
+    "allowJs": true,
+    "allowUnreachableCode": false,
+    "baseUrl": "./",
+    "checkJs": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "exactOptionalPropertyTypes": false,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": false,
+    "jsx": "react-jsxdev",
+    "lib": ["dom", "dom.iterable", "es2021"],
+    "module": "es2022",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "noErrorTruncation": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "paths": {
+      "@flex-development/tutils/*": [
+        "node_modules/@flex-development/tutils/esm/*"
+      ],
+      "@flex-development/tutils": [
+        "node_modules/@flex-development/tutils/esm/index"
+      ],
+      "components/*": [
+        "src/components/atoms/*",
+        "src/components/molecules/*",
+        "src/components/organisms/*"
+      ],
+      "config/*": ["src/config/*"],
+      "fixtures/*": ["__fixtures__/*"],
+      "hooks/*": ["src/hooks/*"],
+      "providers/*": ["src/providers/*"],
+      "src/*": ["src/*"],
+      "storybook/*": [".storybook/*"],
+      "styles/*": ["src/styles/*"],
+      "tests/*": ["__tests__/*"],
+      "utils/*": ["src/utils/*"]
+    },
+    "preserveConstEnums": true,
+    "preserveSymlinks": true,
+    "pretty": true,
+    "resolveJsonModule": true,
+    "rootDir": "./",
+    "skipLibCheck": true,
+    "strict": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es2021",
+    "useDefineForClassFields": true,
+    "useUnknownInCatchVariables": true
+  },
+  "exclude": [
+    "./coverage",
+    "./dist",
+    "./node_modules",
+    "./public",
+    "./sb",
+    "./storybook-static"
+  ],
+  "include": [
+    "**/**/*.cjs",
+    "**/**/*.cts",
+    "**/**/*.mjs",
+    "**/**/*.mts",
+    "**/**/*.ts",
+    "**/**/*.tsx",
+    "**/**/.*.cjs",
+    "**/**/.*.cts",
+    "**/**/.*.ts",
+    "./.storybook/**/*"
+  ],
+  // SEE: https://typestrong.org/ts-node/docs/configuration
+  "ts-node": {
+    "compilerOptions": {},
+    "esm": true,
+    "experimentalSpecifierResolution": "node",
+    "moduleTypes": {
+      ".storybook/main.ts": "cjs",
+      ".storybook/plugins/docgen/constants.ts": "cjs",
+      ".storybook/plugins/docgen/index.ts": "cjs",
+      ".storybook/plugins/docgen/plugin.ts": "cjs",
+      ".storybook/plugins/vitest/constants.ts": "cjs",
+      ".storybook/plugins/vitest/index.ts": "cjs",
+      ".storybook/plugins/vitest/plugin.ts": "cjs",
+      ".vite.config.common.ts": "cjs"
+    },
+    "require": [],
+    "transpileOnly": true
+  }
+}

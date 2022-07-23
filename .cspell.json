@@ -1,0 +1,36 @@
+{
+  "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+  "allowCompoundWords": true,
+  "caseSensitive": false,
+  "dictionaries": ["@flex-development/flexcharts"],
+  "dictionaryDefinitions": [
+    {
+      "name": "@flex-development/flexcharts",
+      "path": "./.cspell/dictionary.txt"
+    }
+  ],
+  "enableGlobDot": true,
+  "failFast": false,
+  "flagWords": [],
+  "ignorePaths": [
+    "**/.gitignore",
+    ".cspell.json",
+    ".env*",
+    ".git/",
+    ".husky/_/",
+    ".yarn/",
+    "CHANGELOG.md",
+    "__tests__/report.json",
+    "public/",
+    "yarn.lock"
+  ],
+  "ignoreRegExpList": [],
+  "ignoreWords": [],
+  "language": "en-US",
+  "patterns": [],
+  "readonly": true,
+  "useGitignore": true,
+  "usePnP": false,
+  "version": "0.2",
+  "words": ["fldv"]
+}

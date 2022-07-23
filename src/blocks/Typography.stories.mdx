@@ -1,0 +1,40 @@
+import { Meta, Typeset } from '@storybook/addon-docs'
+import theme from 'src/styles/theme'
+
+<Meta title='Blocks/Typography' />
+
+# Typography
+
+export const SAMPLE = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+export const SIZES = [...new Set(Object.values(theme.font.sizes))]
+
+<br />
+
+## Basier Circle
+
+**Weights:** `400`(normal), `500`(medium), `600`(semibold), `700`(bold)
+
+<Typeset
+  fontFamily={theme.font.families.basier}
+  fontSizes={SIZES}
+  fontWeight={theme.font.weights.normal}
+  sampleText={SAMPLE}
+/>
+<Typeset
+  fontFamily={theme.font.families.basier}
+  fontSizes={SIZES}
+  fontWeight={theme.font.weights.medium}
+  sampleText={SAMPLE}
+/>
+<Typeset
+  fontFamily={theme.font.families.basier}
+  fontSizes={SIZES}
+  fontWeight={theme.font.weights.semibold}
+  sampleText={SAMPLE}
+/>
+<Typeset
+  fontFamily={theme.font.families.basier}
+  fontSizes={SIZES}
+  fontWeight={theme.font.weights.bold}
+  sampleText={SAMPLE}
+/>

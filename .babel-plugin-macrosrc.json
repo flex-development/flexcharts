@@ -1,0 +1,11 @@
+{
+  "styledComponents": {
+    "displayName": true,
+    "fileName": false,
+    "minify": false,
+    "namespace": "fldv",
+    "pure": true,
+    "ssr": false,
+    "transpileTemplateLiterals": false
+  }
+}

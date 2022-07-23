@@ -1,0 +1,11 @@
+<!-- SEE: https://storybook.js.org/docs/react/configure/story-rendering -->
+
+<meta name="viewport" content="initial-scale=1, width=device-width" />
+
+<!--
+  fixes `global is not defined`
+  https://github.com/storybookjs/storybook/issues/15391
+-->
+<script>
+  window.global = window
+</script>

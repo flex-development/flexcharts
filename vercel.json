@@ -1,0 +1,50 @@
+{
+  "builds": [
+    {
+      "config": {
+        "buildCommand": "bash ./scripts/vercel-build.sh",
+        "installCommand": "yarn --immutable",
+        "outputDirectory": "sb",
+        "zeroConfig": true
+      },
+      "src": "package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "cleanUrls": true,
+  "github": {
+    "autoAlias": true,
+    "enabled": true,
+    "silent": false
+  },
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31556952, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/favicon.ico",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600"
+        }
+      ]
+    }
+  ],
+  "public": false,
+  "redirects": [
+    {
+      "source": "/repo",
+      "destination": "https://github.com/flex-development/flexcharts",
+      "permanent": true
+    }
+  ],
+  "rewrites": [],
+  "trailingSlash": false
+}

@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": false,
+    "esModuleInterop": false,
+    "jsx": "react"
+  },
+  "extends": "./tsconfig.json"
+}

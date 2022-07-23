@@ -1,0 +1,14 @@
+# TARGET BROWSERS AND NODE VERSIONS
+# https://github.com/browserslist/browserslist#browsers
+# https://github.com/browserslist/browserslist#full-list
+
+last 2 and_chr version
+last 2 and_ff version
+last 2 chrome version
+last 2 edge version
+last 2 ff version
+last 2 ios_saf version
+last 2 safari version
+
+[ssr]
+node 16.16.0
