@@ -2,8 +2,8 @@
   "builds": [
     {
       "config": {
-        "buildCommand": "bash ./scripts/vercel-build.sh",
-        "installCommand": "yarn --immutable",
+        "buildCommand": "yarn build:sb",
+        "installCommand": "NODE_OPTIONS='' yarn --immutable",
         "outputDirectory": "sb",
         "zeroConfig": true
       },

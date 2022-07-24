@@ -13,7 +13,6 @@
 
 git diff HEAD^ HEAD --quiet \
   public \
-  scripts/vercel-build.sh \
   scripts/vercel-ignored-build-step.sh \
   src \
   typings \
